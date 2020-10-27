@@ -11,16 +11,24 @@
 ```ruby
 $ irb
 izjosve@ijzosve:~$ irb
+
 irb(main):001:1* class Person
+
 irb(main):002:1*   attr_accessor :name
+
 irb(main):003:0> end
 => nil
+
 irb(main):004:0> p = Person.new
+
 irb(main):005:0> p.name = "ijzosve"
+
 irb(main):006:0> p
 => #<Person:0x000055b382dc13e8 @name="ijzosve">
+
 irb(main):007:0> Marshal.dump(p)
 => "\x04\bo:\vPerson\x06:\n@nameI\"\fijzosve\x06:\x06ET"
+
 irb(main):008:0> Marshal.load("\x04\bo:\vPerson\x06:\n@nameI\"\fijzosve\x06:\x06ET")
 => #<Person:0x000055b383081e98 @name="ijzosve">
 ```

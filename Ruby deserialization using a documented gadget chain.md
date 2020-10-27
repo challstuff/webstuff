@@ -102,3 +102,8 @@ require "base64"
 puts "Payload (Base64 encoded):"
 puts Base64.encode64(payload)
 ```
+<br/><br/>
+- J'exécute.<br/><br/>
+<img src="https://media.discordapp.net/attachments/768928242467340328/770745566602723408/unknown.png?width=1205&height=336"/><br/><br/>
+- On a notre gadget chain, maintenant on a plus qu'à le remplacer par le token de la requête.<br/><br/>
+<img src="https://media.discordapp.net/attachments/768928242467340328/770746126319878174/unknown.png?width=1274&height=392"/><br/><br/>

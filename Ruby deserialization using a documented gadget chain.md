@@ -10,23 +10,17 @@
 - La classe Marshal a les méthodes de classe «dump» et «load» qui peuvent être utilisées comme suit:
 ```ruby
 $ irb
->> class Person
->>   attr_accessor :name
->> end
+izjosve@ijzosve:~$ irb
+irb(main):001:1* class Person
+irb(main):002:1*   attr_accessor :name
+irb(main):003:0> end
 => nil
-
->> p = Person.new
-=> #<Person:0x00005584ba9af490>
-
->> p.name = "Luke Jahnke"
-=> "Luke Jahnke"
-
->> p
-=> #<Person:0x00005584ba9af490 @name="Luke Jahnke">
-
->> Marshal.dump(p)
-=> "\x04\bo:\vPerson\x06:\n@nameI\"\x10Luke Jahnke\x06:\x06ET"
-
->> Marshal.load("\x04\bo:\vPerson\x06:\n@nameI\"\x10Luke Jahnke\x06:\x06ET")
-=> #<Person:0x00005584ba995dd8 @name="Luke Jahnke">
+irb(main):004:0> p = Person.new
+irb(main):005:0> p.name = "ijzosve"
+irb(main):006:0> p
+=> #<Person:0x000055b382dc13e8 @name="ijzosve">
+irb(main):007:0> Marshal.dump(p)
+=> "\x04\bo:\vPerson\x06:\n@nameI\"\fijzosve\x06:\x06ET"
+irb(main):008:0> Marshal.load("\x04\bo:\vPerson\x06:\n@nameI\"\fijzosve\x06:\x06ET")
+=> #<Person:0x000055b383081e98 @name="ijzosve">
 ```

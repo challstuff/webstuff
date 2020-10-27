@@ -7,7 +7,7 @@
 <img src="https://media.discordapp.net/attachments/768928242467340328/770031231060017192/unknown.png?width=1195&height=890"/><br/><br/>
 ## Développement gadget 
 - Pour commencer, un peu de théorie. Les termes utilisés par Ruby pour désigner la sérialisation et la désérialisation sont marshalling et unmarshalling.
-- La classe Marshal a les méthodes de classe «dump» et «load» qui peuvent être utilisées comme suit:
+- La classe Marshal a les méthodes de classe «dump» et «load» qui peuvent être utilisées comme suit:<br/><br/>
 ```ruby
 $ irb
 izjosve@ijzosve:~$ irb
@@ -33,7 +33,8 @@ irb(main):008:0> Marshal.load("\x04\bo:\vPerson\x06:\n@nameI\"\fijzosve\x06:\x06
 => #<Person:0x000055b383081e98 @name="ijzosve">
 ```
 <br/><br/>
-- Pour le script qui génère et vérifie la désérialisation de la gadget chain j'ai utilisé cette documentation https://www.elttam.com/blog/ruby-deserialization/#content.<br/><br/>
+- Pour le script qui génère et vérifie la désérialisation de la gadget chain j'ai utilisé cette documentation https://www.elttam.com/blog/ruby-deserialization/#content.
+<br/><br/>
 ```ruby
 #!/usr/bin/env ruby
 
